@@ -1,38 +1,32 @@
-# Plataforma de Cursos con Inteligencia Artificial
+# Modelo de Toxicidad
 
-Este proyecto consiste en una plataforma de cursos en línea impulsada por inteligencia artificial para recomendación de contenido personalizado.
+Este proyecto consiste en un modelo de toxicidad que utiliza TensorFlow.js y el modelo de TensorFlow Hub para detectar la toxicidad en texto.
 
-## Características principales
+## Funcionamiento
 
-- Recomendación de cursos personalizados mediante inteligencia artificial.
-- Catálogo de cursos con búsqueda y filtros.
-- Perfiles de usuario con historial de cursos y preferencias.
+El modelo carga un modelo preentrenado de toxicidad y realiza la clasificación de las frases proporcionadas como entrada. Las frases pueden ser ingresadas a través de un formulario de entrada de texto en una página web.
 
 ## Tecnologías utilizadas
 
-- TypeScript
-- Node.js
-- Express
-- React
-- FastAPI (para el servidor de IA en Python)
-- GEMINI (modelo de inteligencia artificial)
+- TensorFlow.js
+- TensorFlow Hub
+- HTML
+- CSS
+- JavaScript
 
 ## Instalación
 
-### Backend (TS, Node, Express)
+1. Clona este repositorio o descarga el código fuente.
+2. Asegúrate de tener instalado un servidor web local o un entorno de desarrollo adecuado para ejecutar el código.
+3. Abre el archivo `index.html` en tu navegador web.
 
-1. Clona el repositorio: `https://github.com/gabykap29/modelo-de-lenguaje-toxicidad.git`
-2. Navega al directorio del backend: `cd server`
-3. Instala las dependencias: `npm install`
-4. Inicia el servidor: `npm run dev`
+## Uso
 
-### Servidor de IA (Python, FastAPI)
+1. Escribe una frase en el campo de entrada de texto.
+2. Haz clic en el botón "Enviar".
+3. El modelo clasificará la frase como tóxica o no tóxica y mostrará el resultado en forma de alerta.
 
-1. Instala Python si no lo tienes instalado en tu sistema.
-2. Navega al directorio del servidor de IA: `cd server AI`
-3. Instala un entorno virtual: `pip install virtualenv`
-4. Inicia el entorno virtual: `virtualenv env`
-5. Instala las dependencias: `pip install -r requirement.txt`
-6. Dentro de la carpeta crea un archivo llamado "clave.py" y declara la variable "clave" con tu API de Gemini.
-7. Inicia el servidor con uvicorn: `uvicorn main:app --reload`
+## Ejemplo
+
+Puedes probar el modelo ingresando diferentes frases en el campo de entrada de texto y observando las alertas generadas por el modelo.
 
